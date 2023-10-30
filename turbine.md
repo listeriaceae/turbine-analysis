@@ -45,6 +45,10 @@ theme:
 
 : **Job Store Schema.** [@mei2020turbine]
 
+# Job Management
+
+![job management](assets/job-management.png)[@mei2020turbine]
+
 # Task Management
 
 ![task management](assets/task-management.png)[@mei2020turbine]

@@ -1,6 +1,21 @@
+# Overview
+
+- plataforma que administra aplicaciones de streaming de datos (real-time)
+  procesando TB/s en 1000s de pipeline.
+- se integra con tupperware.
+- puede funcionar con cualquier sistema de despliegue de contenedores y manejo
+  de clusters.
+- pipeline >(1, N)> jobs >(1, M)> tasks
+
+# System Overview
+
+- quien usa al job manager (dev, onCall, auto-scaler)
+- job store > task service > local task manager (ejecutar)
+- vertical vs. horizontal
+
 # Appendix A
 
-Task Specs include all configuration necessary to run a task.
+Task Specs include all configuration necessary to run a task.  
 Task Service retrieves list of jobs from Job Store to generate Task Specs.  
 Task manager fetches Task Specs from Task Service.  
 Turbine Containers run a Task Manager which spawns stream processing tasks in

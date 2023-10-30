@@ -37,16 +37,16 @@ Goals:
 2. Fail-over tasks to healthy hosts during host failures.
 3. Restart tasks upon crashes.
 4. Load balance tasks across the cluster for even CPU, Memory and IO usage.
-How? (Appendix A)
-Scheduling (balanced assignment of shards to containers):
-- Fetch all tasks every 60s (Task Service fault-tolerance).
-- Task Manager computes MD5 of tasks to determine associated shard ID.
-- {Task -> Shard} mapping is cached and updated periodically (60s).
 Load Balancing:
 - Periodically compute shard load (CPU, memory, etc.)
 - Satisfy Turbine container capacity constraints (tier specific)?.
 - Mantain global resource balance across cluster.
 - Keep load within +/-10% of average load of containers across tier.
+How? (Appendix A)
+Scheduling (balanced assignment of shards to containers):
+- Fetch all tasks every 60s (Task Service fault-tolerance).
+- Task Manager computes MD5 of tasks to determine associated shard ID.
+- {Task -> Shard} mapping is cached and updated periodically (60s).
 Failure Handling:
 - bi-directional heartbeat.
 - no heartbeat for fail-over interval:
