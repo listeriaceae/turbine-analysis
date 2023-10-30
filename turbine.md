@@ -1,19 +1,7 @@
 ---
 lang: es-AR
 title: 'Turbine: Facebook’s Service Management Platform for Stream Processing'
-author:
-- Yuan Mei
-- Luwei Cheng
-- Vanish Talwar
-- Michael Y. Levin
-- Gabriela Jacques-Silva
-- Nikhil Simha
-- Anirban Banerjee
-- Brian Smith
-- Tim Williamson
-- Serhat Yilmaz
-- Weitao Chen
-- Guoqiang Jerry Chen
+author: Yuan Mei et al.
 date: Juan Ignacio Díaz, Francisco Pereira # hack horrible para que se vea bien en la presentación
 theme:
 - Copenhagen
@@ -21,12 +9,11 @@ theme:
 
 # Turbine
 
-- Fast and scalable task scheduler.
-- Efficient predictive auto scaler.
-- ACID, fault-tolerant (ACIDF) application update mechanism.
+- Streaming applications manager.
 - Service management platform on top of cluster management systems [^1].
-- Currently integrates with Tupperware[@narayanan2014tupperware], a low level
-  host manager.
+- Currently integrates with Tupperware[@narayanan2014tupperware].
+
+![pipeline](assets/pipeline.png)[@chen2016realtime]
 
 [^1]: Aurora, Mesos, Borg, Tupperware, Kubernetes, etc.
 
