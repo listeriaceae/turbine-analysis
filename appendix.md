@@ -1,7 +1,7 @@
 # Overview
 
-- plataforma que administra aplicaciones de streaming de datos (real-time)
-  procesando TB/s en 1000s de pipeline.
+- plataforma de administracion de aplicaciones de streaming de datos de FB.
+- procesan TB/s en 1000s de pipeline.
 - se integra con tupperware.
 - puede funcionar con cualquier sistema de despliegue de contenedores y manejo
   de clusters.
