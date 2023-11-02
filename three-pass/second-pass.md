@@ -34,8 +34,11 @@ State Syncer:
 ## Task Placement and Load Balancing
 Goals:
 1. Schedule tasks without duplication and no task loss.
-2. Fail-over tasks to healthy hosts during host failures.
-3. Restart tasks upon crashes.
+   - Fetch all tasks every 60s (Task Service fault-tolerance).
+   - Task Manager computes MD5 of tasks to determine associated shard ID.
+   - {Task -> Shard} mapping is cached and updated periodically (60s).
+2. Restart tasks upon crashes.
+3. Fail-over tasks to healthy hosts during host failures.
 4. Load balance tasks across the cluster for even CPU, Memory and IO usage.
 ### Shard Manager - Load Balancing:
 - Local task manager periodically computes shard load (CPU, memory, etc.)
@@ -43,10 +46,6 @@ Goals:
 - Mantain global resource balance across cluster.
 - Keep load within +/-10% of average load of containers across tier.
 How? (Appendix A)
-### Task Manager - Scheduling:
-- Fetch all tasks every 60s (Task Service fault-tolerance).
-- Task Manager computes MD5 of tasks to determine associated shard ID.
-- {Task -> Shard} mapping is cached and updated periodically (60s).
 ### Shard Manager - Failure Handling:
 - bi-directional heartbeat.
 - no heartbeat for fail-over interval:
