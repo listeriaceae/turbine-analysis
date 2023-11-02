@@ -65,4 +65,14 @@ theme:
 - Manage resource allocations
 - Disaster recovery
 
+# Load Balancer
+
+![Testing the load balancer. [@mei2020turbine]](assets/load-balancer.png)
+
+# Auto Scaler
+
+![Processing backlogged data. [@mei2020turbine]](assets/backlog.png)
+
+
+
 # Bibliografía

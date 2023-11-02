@@ -90,3 +90,14 @@ Vertical vs. Horizontal:
 Capacity Management:
 - monitor resource usage of jobs in a cluster
 - disaster recovery: prioritize privileged jobs
+
+## Production Experience
+- ~33% footprint reduction
+Load Balancing Test:
+1. disable load balancer
+2. mimic maintenance (failover)
+3. re-enable load balancer
+Auto Scaler:
+- w/ vs. w/o auto scaler
+- remove task limit
+- manual scaling, uneven traffic distribution
