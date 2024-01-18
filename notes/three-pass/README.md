@@ -1,5 +1,4 @@
-# Three-pass method
-:paper:three-pass:
+# [The three-pass approach][How to Read a Paper]
 
 ## First pass
 
@@ -48,3 +47,5 @@ Summarize, with supporting evidence.
 Reconstruct the structure from memory.
 Identify strong and weak points.
 Pinpoint implicit assumptions, missing citations and potential issues.
+
+[How to Read a Paper]: https://svr-sk818-web.cl.cam.ac.uk/keshav/papers/07/paper-reading.pdf

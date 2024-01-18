@@ -37,7 +37,7 @@ processing requirements.
   (Task Management), and how to run (Resource Management) to minimize the
   impact of individual component failures.
 
-## References
+### References
 
 [^1]: Aurora, Mesos, Borg, Tupperware, Kubernetes, etc.
 [^2]: A. Narayanan. Tupperware: Containerized deployment at Facebook. In
